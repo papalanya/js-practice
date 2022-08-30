@@ -1,12 +1,12 @@
-function checkStorage(available, ordered) {
+function includes(array, value) {
     // Change code below this line
-    if (ordered === 0) {
-      return "Your order is empty!";
+  let connect = false;
+    for (const item of array) {
+    if (item === value) {
+      return true;
     }
-    if (ordered > available) {
-      return "Your order is too large, not enough goods in stock!";
-    }
-    return "The order is accepted, our manager will contact you";
+  }
+    return false;
     // Change code above this line
   }
   
